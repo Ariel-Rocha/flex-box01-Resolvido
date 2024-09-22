@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula CSS - Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .caixa.pai {
+            display: flex;
+            justify-content: center; /* Alteração 3: center */
+            align-items: center; /* Alteração 5: center */
+            flex-direction: column; /* Alteração 6: column */
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 20px;
+            height: 200px;
+        }
+
+        .caixa.filho {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            color: #fff;
+        }
+
+        .cor1 {
+            background-color: #f00;
+        }
+
+        .cor2 {
+            background-color: #0f0;
+        }
+
+        .cor3 {
+            background-color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula Flexbox</h1>
+    <div class="caixa pai">
+        <div class="caixa filho cor1">1</div>
+        <div class="caixa filho cor2">2</div>
+        <div class="caixa filho cor3">3</div>
+    </div>
+
+    <div class="instrucoes">
+        <h2>Testando comandos de estilo:</h2>
+        <p><em>Adicione os estilos abaixo no código-fonte e veja o que acontece com os elementos.</em></p><br>
+        <h3>(As alteraões abaixo ja estão aplicadas nesta pagina)</h3>
+        <ol>
+            <li>Altere a propriedade <strong>justify-content</strong> modificando o valor para <strong>flex-end</strong> (era "flex-start");</li>
+            <li>Altere a propriedade <strong>justify-content</strong> modificando o valor para <strong>space-between</strong>;</li>
+            <li>Altere a propriedade <strong>justify-content</strong> modificando o valor para <strong>center</strong>;</li>
+            <li>Altere a propriedade <strong>align-items</strong> modificando o valor para <strong>flex-end</strong> (era "flex-start");</li>
+            <li>Altere a propriedade <strong>align-items</strong> modificando o valor para <strong>center</strong>;</li>
+            <li>Altere a propriedade <strong>flex-direction</strong> modificando o valor para <strong>column</strong> (era "row");</li>
+        </ol>
+    </div>
+</body>
+</html>
+
